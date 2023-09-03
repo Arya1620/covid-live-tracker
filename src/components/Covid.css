@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(110, 230, 234);
+}
+
+
+h1,h2{
+    text-align: center;
+}
+
+h1 {
+    transform: scale(1); /* Initial scale */
+    animation: grow 2s infinite alternate; /* Apply the "grow" animation */
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1); /* Start at the original size */
+    }
+    100% {
+        transform: scale(1.1); /* Grow to 110% of the original size */
+    }
+}
+
+
+
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-flow: wrap;
+    
+}
+
+
+.card{
+    background-color:rgb(95, 15, 244);
+    width: calc(76%/3);
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    transition: 0.3s;
+
+}
+
+.card:hover{
+    transform:scale(1.1);
+} 
+
+.card__name{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card__name span {
+    font-size: 15px;
+}
+
+.card__total {
+    font-size: 200%;
+    font-weight: bold;
+
+}
